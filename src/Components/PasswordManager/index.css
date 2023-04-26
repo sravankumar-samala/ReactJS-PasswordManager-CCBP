@@ -1,0 +1,188 @@
+.container {
+  min-height: 100vh;
+  padding: clamp(1em, 5vw, 2em);
+  background-color: #9ba9eb;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+input,
+button {
+  outline: transparent;
+  border: transparent;
+}
+button {
+  cursor: pointer;
+}
+.password-manager-header-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.password-manager-header-img img {
+  max-width: 100%;
+}
+
+.passwords-form-container,
+.passwords-items-container {
+  background-color: #5763a5;
+  padding: 2em;
+  border-radius: 7px;
+}
+.passwords-form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 1em;
+  place-items: center;
+}
+
+.logo-div {
+  width: 20%;
+}
+.logo-div img {
+  max-width: 100%;
+}
+.form {
+  background-color: #454f84;
+  border-radius: 10px;
+  padding: clamp(1em, 3.5vw, 1.7em);
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.3em, 3vw, 1em);
+}
+/* .form h2{
+    
+} */
+.form h2,
+h1 {
+  color: white;
+  font-size: clamp(1.2em, 5vw, 1.7em);
+}
+.input-container {
+  display: flex;
+  gap: 0.12em;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.input-icon-div,
+.input-container > input {
+  background-color: white;
+  padding: clamp(0.2em, 1.3vw, 0.7em);
+}
+.input-icon-div {
+  display: grid;
+  place-items: center;
+}
+.input-container > input {
+  width: 100%;
+  font-size: clamp(0.8rem, 3vw, 1.1rem);
+  text-align: left;
+}
+.input-icon-div img {
+  width: 20px;
+  height: 20px;
+}
+.add-btn {
+  border: none;
+  padding: clamp(0.2em, 2vw, 0.7em) 1.5em;
+  border-radius: 5px;
+  background-color: #0b69ff;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  width: fit-content;
+  align-self: flex-end;
+}
+
+/* passwords list container styles  */
+.passwords-items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+.password-items-header {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.passwords-count {
+  padding: 0 1em;
+  border: 1px solid #c3caea;
+  background-color: transparent;
+  border-radius: 20px;
+  color: white;
+}
+.show-passwords-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5em;
+  color: white;
+  padding: 1em 0;
+}
+.show-passwords-container input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.show-passwords-container label {
+  font-size: clamp(0.5em, 3vw, 1.1em);
+}
+
+.passwords-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: stretch center;
+  gap: 1em;
+}
+.display-empty-list-container {
+  /* width: 50%; */
+  text-align: center;
+}
+.display-empty-list-container img {
+  max-width: 100%;
+}
+.display-empty-list-container p {
+  color: white;
+  font-size: clamp(1rem, 5vw, 2.5rem);
+}
+
+@media (max-width: 576px) {
+  .passwords-form-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 50%);
+  }
+  .form {
+    order: 2;
+  }
+  .form h2 {
+    margin-block: 5px;
+  }
+  .password-items-header {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .logo-div {
+    width: 40%;
+  }
+}
+@media (min-width: 576px) {
+  .display-empty-list-container {
+    width: 50%;
+  }
+}

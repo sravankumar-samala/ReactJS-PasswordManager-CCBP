@@ -1,0 +1,78 @@
+.password-item {
+  display: grid;
+  grid-template-columns: 20% 1fr 10%;
+  place-items: center;
+  gap: 1.5em;
+  min-width: 200px;
+  border: 1px solid #94a3b8;
+  padding: 1em;
+  border-radius: 10px;
+}
+.profile-letter {
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.password-item-details {
+  justify-self: start;
+}
+.password-item-details p {
+  margin-block: 10px;
+  color: white;
+  font-weight: 500;
+}
+.password-item-details p:first-child {
+  font-size: clamp(1rem, 5vw, 1.3rem);
+}
+
+.password-item-details img {
+  max-width: 90%;
+  margin-block: 7px;
+}
+.del-btn {
+  background-color: transparent;
+  border: none;
+}
+.del-btn img {
+  width: 30px;
+  height: 30px;
+}
+.gray-blue-d {
+  background-color: #454f84;
+}
+.blue {
+  background-color: #0b69ff;
+}
+.gray-d {
+  background-color: #94a3b8;
+}
+.gray-l {
+  background-color: #b6c3ca;
+}
+.blue-ll {
+  background-color: #7683cb;
+}
+.yellow-l {
+  background-color: #f59e0b;
+}
+.green-l {
+  background-color: #10b981;
+}
+.orange-l {
+  background-color: #f97316;
+}
+.cyan-l {
+  background-color: #14b8a6;
+}
+.red-d {
+  background-color: #b91c1c;
+}
+.gray-blue-d,
+.blue,
+.red-d {
+  color: white;
+}
